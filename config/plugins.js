@@ -18,7 +18,7 @@ console.log('Cloudinary Config:', {
   api_secret: process.env.CLOUDINARY_SECRET,
 });
 
-module.exports = ({ env }) => ({
+module.exports = () => ({
   upload: {
     provider: 'cloudinary',
     providerOptions: {
